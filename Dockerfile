@@ -1,6 +1,6 @@
 FROM crystallang/crystal:0.35.0
 
-RUN apt-get update && apt-get install -y git wget
+RUN apt-get update && apt-get install -y git wget postgresql-client
 
 RUN set -ex \
     && git clone https://github.com/luckyframework/lucky_cli \
